@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+T = int(raw_input())
+if (2 <= T <= 10000):
+    for i in range(T):
+        element = raw_input()
+        evn = ''
+        odd = ''
+        if (2 <= len(element) <= 10000):
+            for i in range(0,len(element)):
+                if (i%2==0):
+                    evn = evn + element[i]
+                else:
+                    odd = odd + element[i]
+            print evn + ' ' + odd
+'''            
+
+for i in range(int(raw_input())):
+    s=raw_input();
+    print(s[::2]+" "+s[1::2])
+'''

@@ -1,0 +1,24 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n = int(raw_input())
+name_numbers = (raw_input().split() for _ in range(n))
+phone_book = {k: v for k,v in name_numbers}
+
+if bool(phone_book):
+    while True:
+        try:
+            name = raw_input()
+            if name in phone_book:
+                print name + '=' + str(phone_book[name])
+            else:
+                print 'Not found'
+        except:
+            break
+
+'''
+n = int(raw_input())
+phone_book = {}
+for i in range(0,n-1):
+    line = (raw_input().split(' '))
+    phone_book[line[0]] = long(line[1])
+'''	

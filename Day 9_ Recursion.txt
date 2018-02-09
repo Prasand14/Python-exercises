@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+TASK
+
+Write a factorial function that takes a positive integer, N as a parameter 
+and prints the result of N! (N factorial).
+
+def factorial(n):
+	cnt = n
+	while n-1 > 1:
+		cnt = cnt * (n-1)
+		n = n-1
+	return cnt
+	
+if __name__ == "__main__":
+	print factorial(int(input()))
+	
+'''
+def factorial(n):
+	return 1 if n==1 else factorial(n-1) * n
+'''
